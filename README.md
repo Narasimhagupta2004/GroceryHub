@@ -1,7 +1,9 @@
 # Ecommerce Platform
 
-A full-stack ecommerce web application with a Node.js/Express backend and a React frontend.
+A full-stack ecommerce web application with a basic Node.js/Express backend and a React frontend.
 
+## Demo Link
+https://groceryhub-48b4.onrender.com
 ## Features
 
 - User registration and login

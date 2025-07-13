@@ -1,0 +1,56 @@
+
+.place-order {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.place-order-left,
+.place-order-right {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.place-order-submit {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green background for submit button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.place-order-submit:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.confirmation-popup {
+    position: fixed; /* Fixed position for popup */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering */
+    background-color: white; /* Background color */
+    padding: 20px; /* Padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px; /* Subtle shadow */
+}
+
+.confirmation-popup h3 {
+   margin-bottom: 10px; /* Space below title */
+}
+
+.confirmation-popup ul {
+   list-style-type: none; /* Remove bullet points */
+   padding-left: 0; /* Remove padding */
+}

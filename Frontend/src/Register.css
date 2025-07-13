@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the form */
+.container {
+    width: 100%;
+     /* Limit width for better appearance on larger screens */
+    margin: 50px auto; /* Center the container with some top margin */
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #e9ecef 100%); /* Initial gradient background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    animation: backgroundAnimation 15s ease infinite; /* Apply background animation */
+}
+
+/* Keyframes for Background Animation */
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #ffffff 0%, #e9ecef 100%);
+    }
+    25% {
+        background: linear-gradient(135deg, #e9ecef 100%, #ffffff 0%);
+    }
+    50% {
+        background: linear-gradient(135deg, #ffffff 0%, #d1ecf1 100%); /* Change to a different light color */
+    }
+    75% {
+        background: linear-gradient(135deg, #d1ecf1 100%, #ffffff 0%);
+    }
+    100% {
+        background: linear-gradient(135deg, #ffffff 0%, #e9ecef 100%);
+    }
+}
+
+/* Form Styles */
+.form-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Header Styles */
+h3 {
+    text-align: center;
+    color: #007bff; /* Bootstrap primary color for header */
+    margin-top: 10px; /* Reduced top margin to minimize space above */
+    margin-bottom: 20px; /* Reduced bottom margin to minimize space below */
+    font-size: 30px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Increased padding for better touch targets */
+    margin-bottom: 19px; /* Space between inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus styles */
+}
+
+/* Input Focus Styles */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow effect on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for button text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+/* Submit Button Hover Effect */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Error and Success Messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Full width on smaller screens */
+        margin-top: 10px; /* Less top margin on smaller screens */
+        padding: 15px; /* Slightly reduced padding */
+        box-shadow: none; /* Remove shadow on very small screens for simplicity */
+        border-radius: 0; /* Square corners on very small screens for simplicity */
+    }
+}
+/* Login Button Styles */
+.login-button {
+    width: auto; /* Auto width to fit text content */
+    padding: 10px 15px; /* Padding for a comfortable click area */
+    background-color: transparent; /* Transparent background for a clean look */
+    color: #007bff; /* Bootstrap primary color for text */
+    border: none; /* No border for a clean look */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Font size similar to other buttons */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.login-button:hover {
+    text-decoration: underline; /* Underline text on hover for emphasis */
+    color: #0056b3; /* Darker blue on hover for visual feedback */
+}

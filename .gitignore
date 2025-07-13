@@ -1,0 +1,33 @@
+Frontend/node_modules/
+# Ignore node_modules in the frontend directory
+Frontend/dist/
+# Ignore the distribution directory in the frontend
+Frontend/build/
+# Ignore the build directory in the frontend
+Frontend/.env
+# Ignore environment variables file in the frontend
+Frontend/.env.local
+# Ignore local environment variables file in the frontend
+Frontend/.env.production
+# Ignore production environment variables file in the frontend
+Frontend/.env.development
+# Ignore development environment variables file in the frontend
+Frontend/.env.test
+# Ignore test environment variables file in the frontend
+
+Backend/node_modules/
+# Ignore node_modules in the backend directory
+Backend/dist/
+# Ignore the distribution directory in the backend
+Backend/build/
+# Ignore the build directory in the backend
+Backend/.env
+# Ignore environment variables file in the backend
+Backend/.env.local
+# Ignore local environment variables file in the backend
+Backend/.env.production
+# Ignore production environment variables file in the backend
+Backend/.env.development
+# Ignore development environment variables file in the backend
+Backend/.env.test
+# Ignore test environment variables file in the backend

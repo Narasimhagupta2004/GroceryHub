@@ -29,7 +29,7 @@ const Register = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/register', data);
+            const response = await axios.post('https://groceryhub-kwvp.onrender.com/register', data);
             setSuccess(response.data);
             setData({ username: '', email: '', password: '', confirmpassword: '' });
             setTimeout(() => {

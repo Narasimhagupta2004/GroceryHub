@@ -22,7 +22,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/login', data);
+            const response = await axios.post('https://groceryhub-kwvp.onrender.com/login', data);
             setSuccess("Login successful!");
             localStorage.setItem('token', response.data.token);
 
